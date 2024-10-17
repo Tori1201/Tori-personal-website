@@ -20,14 +20,13 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
                 sequence={[
-                    "Ramiro",
+                    "Victoria",
                     1000,
-                    "Game Developer",
+                    "Mechanical Engineer",
                     1000,
                     "Researcher",
                     1000,
-                    "Teacher",
-                    1000,
+                    
                 ]}
                 wrapper="span"
                 speed={50}
@@ -35,24 +34,18 @@ const HeroSection = () => {
                 />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          &ldquo;The best way to predict the future is to invent it.&ldquo;
-            — Alan Kay
+          &ldquo;Strive for perfection in everything you do. Take the best that exists and make it better. When it does not exist, design it.&ldquo;
+            — Sir Henry Royce
           </p>
           <div>
           <Link
-              href="/resumes/Game_Dev_Resume.pdf"
-              download="Game_Dev_Resume.pdf"
+              href="/resumes/Victoria_s_Resume.pdf"
+              download="Victoria_s_Resume.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 boder border-white mt-3 text-white"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Software Dev</span>
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Resume</span>
             </Link>
-            <Link
-              href="/resumes/Game_Dev_Resume.pdf"
-              download="Game_Dev_Resume.pdf"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 boder border-white mt-3 translate-x-[10px] text-white"
-            >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Game Dev</span>
-            </Link>
+            
           </div>
         </motion.div>
         <motion.div
