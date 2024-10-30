@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
+import { achievementsList } from "@/tailwind.config";
 
 const AnimatedNumbers = dynamic(
   () => {
@@ -9,28 +10,7 @@ const AnimatedNumbers = dynamic(
   { ssr: false }
 );
 
-const achievementsList = [
-  {
-    metric: "Projects",
-    value: "3",
-    postfix: "+",
-  },
-  {
-    prefix: "~",
-    metric: "Users",
-    value: "50",
-  },
-  {
-    metric: "Awards",
-    value: "1",
-  },
-  {
-    metric: "Years",
-    value: "1",
-  },
-];
-
-const AchievementsSection = () => {
+function AchievementsSection() {
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
       <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
@@ -46,15 +26,7 @@ const AchievementsSection = () => {
                   includeComma
                   animateToNumber={parseInt(achievement.value)}
                   locale="en-US"
-                  className="text-white text-4xl font-bold"
-                  /*configs={(_, index) => {
-                    return {
-                      mass: 1,
-                      friction: 100,
-                      tensions: 140 * (index + 1),
-                    };
-                  }}*/
-                />
+                  className="text-white text-4xl font-bold" />
                 {achievement.postfix}
               </h2>
               <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
@@ -64,6 +36,6 @@ const AchievementsSection = () => {
       </div>
     </div>
   );
-};
+}
 
 export default AchievementsSection;

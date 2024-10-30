@@ -18,3 +18,24 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+export const achievementsList = [
+  {
+    metric: "Projects",
+    value: "3",
+    postfix: "+",
+  },
+  {
+    prefix: "+",
+    metric: "GPA",
+    value: "3",
+  },
+  {
+    metric: "Awards",
+    value: "1",
+  },
+  {
+    metric: "Years",
+    value: "1",
+  },
+];
+
